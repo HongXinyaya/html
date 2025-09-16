@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的个人网站 · GSAP 炫技</title>
+    <meta name="description" content="使用 HTML/CSS/GSAP 打造的动效个人站点" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2300e5ff'/%3E%3Ctext x='50' y='62' font-size='56' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3EA%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#" class="brand" aria-label="主页">A<span class="accent">.</span></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="展开菜单">
+          <span></span><span></span><span></span>
+        </button>
+        <div id="nav-links" class="links">
+          <a href="#home">首页</a>
+          <a href="#projects">作品</a>
+          <a href="#about">关于</a>
+          <a href="#contact">联系</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home" class="hero">
+      <div class="hero-bg">
+        <div class="shape s1" aria-hidden="true"></div>
+        <div class="shape s2" aria-hidden="true"></div>
+        <div class="shape s3" aria-hidden="true"></div>
+      </div>
+      <div class="container">
+        <p class="eyebrow">Creative Developer · 动效爱好者</p>
+        <h1 class="headline">
+          你好，我是 <span class="name">Your Name</span>
+        </h1>
+        <p class="subhead">
+          我用 HTML/CSS/GSAP 打造流畅、灵动的网页体验。
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">查看作品</a>
+          <a class="btn ghost" href="#contact">联系我</a>
+        </div>
+      </div>
+    </main>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>精选作品</h2>
+          <p>以下是我近期的一些项目展示。</p>
+        </div>
+        <div class="grid">
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>交互动效页面</h3>
+            <p>使用 GSAP ScrollTrigger 构建的滚动叙事体验。</p>
+          </article>
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>产品着陆页</h3>
+            <p>高转化率的落地页，响应式与性能优化。</p>
+          </article>
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>数据可视化</h3>
+            <p>沉浸式图表动画与细腻的过渡效果。</p>
+          </article>
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>品牌官网</h3>
+            <p>统一的视觉体系与顺滑的加载动画。</p>
+          </article>
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>微交互集合</h3>
+            <p>按钮、卡片、导航的手感与反馈设计。</p>
+          </article>
+          <article class="card" data-animate="fade-up">
+            <div class="thumb"></div>
+            <h3>三维滚动</h3>
+            <p>CSS 3D + GSAP 打造的动态空间感。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-wrap">
+        <div class="avatar" data-animate="fade-right" aria-hidden="true"></div>
+        <div class="about-text" data-animate="fade-left">
+          <h2>关于我</h2>
+          <p>
+            我专注于前端交互与动效实现，热爱把想法变成顺滑、可触的体验。熟悉
+            GSAP / ScrollTrigger / CSS 动画 / Web 性能优化。
+          </p>
+          <ul class="skills">
+            <li>GSAP</li>
+            <li>ScrollTrigger</li>
+            <li>CSS 动画</li>
+            <li>Web 性能</li>
+            <li>可访问性</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 data-animate="fade-up">一起合作</h2>
+        <p data-animate="fade-up">
+          有想法？发我邮件：
+          <a href="mailto:you@example.com" class="link">you@example.com</a>
+        </p>
+        <div class="cta" data-animate="fade-up">
+          <a class="btn primary" href="mailto:you@example.com">发封邮件</a>
+          <a class="btn ghost" href="#home">回到顶部</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name. 用 GSAP 驱动的动效。</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+  </html>
+
